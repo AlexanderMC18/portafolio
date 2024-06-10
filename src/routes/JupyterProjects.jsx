@@ -14,11 +14,14 @@ function JupyterProjects() {
 
   return (
     <div className="container mx-auto p-4">
-      <h2 className="text-4xl font-bold mb-8 text-center">Proyectos en Jupyter Notebook</h2>
+      <h2 className="text-4xl font-bold mb-8 text-center">Proyectos en Jupyter Notebook <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJD4OaD4vy7uRYaren_VTQQlDsw47UWp0WOg&s" alt="Jupyter Logo" className=" w-auto" />
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map(project => (
           <div key={project.id} className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-start">
-            <h3 className="text-3xl font-semibold mb-4">{project.name}</h3>
+            <h3 className="text-3xl font-semibold mb-4">
+              {project.name} <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJD4OaD4vy7uRYaren_VTQQlDsw47UWp0WOg&s" alt="Jupyter Logo" className="ml-2 h-6 w-auto" />
+            </h3>
             <p className="text-gray-700 mb-4">{project.description}</p>
             <a 
               href={project.html_url} 

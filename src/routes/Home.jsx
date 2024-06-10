@@ -19,12 +19,14 @@ function Home() {
 
       <h3 className="mt-6 text-2xl">Connect with me:</h3>
       <div className="flex flex-wrap justify-center mt-6 w-full">
-        <p className="mt-2">
-        <span className="mr-2"><a href="https://web.facebook.com/profile.php?id=100080741028953"><FaFacebook /></a></span>
-        <span className="mr-2"><a href="link_de_twitter"><FaTwitter /></a></span>
-        <span className="mr-2"><a href="https://www.instagram.com/alexmartinezcis18/"><FaInstagram /></a></span>
-        <span className="mr-2"><a href="https://www.linkedin.com/in/alexander-martinez-cisneros-a077702b7/"><FaLinkedin /></a></span>
-        </p>
+      <p className="mt-2 flex flex-fil items-center">
+        <div className="mb-4"><a href="https://web.facebook.com/profile.php?id=100080741028953" className="text-4xl"><FaFacebook /></a></div>
+        <div className="mb-4"><a href="link_de_twitter" className="text-4xl"><FaTwitter /></a></div>
+        <div className="mb-4"><a href="https://www.instagram.com/alexmartinezcis18/" className="text-4xl"><FaInstagram /></a></div>
+        <div className="mb-4"><a href="https://www.linkedin.com/in/alexander-martinez-cisneros-a077702b7/" className="text-4xl"><FaLinkedin /></a></div>
+      </p>
+
+
       </div>
 
       <h3 className="mt-6 text-2xl">Languages and Tools:</h3>
