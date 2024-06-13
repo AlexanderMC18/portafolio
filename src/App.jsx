@@ -44,7 +44,7 @@ function App() {
   const location = useLocation();
 
   const backgroundColors = {
-    '/': 'bg-gray-100',
+    '/': '',
     '/javascript': 'bg-yellow-100',
     '/python': 'bg-blue-100',
     '/jupyter': 'bg-orange-100',
@@ -52,7 +52,7 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen flex flex-col ${backgroundColors[location.pathname] || 'bg-gray-100'} text-gray-900`}>
+    <div className={`min-h-screen flex flex-col ${backgroundColors[location.pathname] || ''} text-gray-900`}>
       <Nav />
       <div className="flex-grow container p-4 flex flex-wrap">
         <Routes>
